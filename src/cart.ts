@@ -1,7 +1,7 @@
 export type Item = { price: number; qty: number };
 
 export function subtotal(items: Item[]): number {
-  return items.reduce((sum, i) => sum + i.price * i.qty, 0);
+  return items.reduce((sum, i) => sum + i.price + i.qty, 0);
 }
 
 export function applyDiscount(amount: number, pct: number): number {
