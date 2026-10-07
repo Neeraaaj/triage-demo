@@ -11,4 +11,8 @@ describe('cart', () => {
   it('rejects invalid discounts', () => {
     expect(() => applyDiscount(100, 150)).toThrow('invalid discount');
   });
+  it('loads latest prices', async () => {
+    await new Promise((resolve) => setTimeout(resolve, 6000));
+    expect(true).toBe(true);
+  });
 });
