@@ -6,5 +6,5 @@ export function subtotal(items: Item[]): number {
 
 export function applyDiscount(amount: number, pct: number): number {
   if (pct < 0 || pct > 100) throw new Error('invalid discount');
-  return Math.round(amount * (1 - pct / 100) * 100) / 100;
+  return amount * (1 - pct) / 100;
 }
