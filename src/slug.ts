@@ -1,4 +1,4 @@
-export function slugify(input: string): string {
+export function toSlug(input: string): string {
   return input
     .toLowerCase()
     .trim()
