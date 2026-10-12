@@ -1,6 +1,6 @@
 import { it, expect } from 'vitest';
 import { slugify } from '../src/slug.js';
 
-it('slugifies titles', () => {
-  expect(slugify('  Hello, World! ')).toBe('hello-world');
+it('removes multiple leading and trailing hyphens', () => {
+  expect(slugify('!!!Hello!!!')).toBe('hello');
 });
